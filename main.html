@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Website</h1>
+        <div class="player">
+            <button class="button prev-button" onclick="prevSong()"></button>
+            <audio id="audioPlayer" controls controlslist="nodownload noremoteplayback"></audio>
+            <button class="button next-button" onclick="nextSong()"></button>
+        </div>
+
+        <script>
+            const songs = [
+                { title: "HUR-有毒不回", src: "music/有毒不回.mp3" },
+                { title: "(G)i-dle-i'M THE TREND", src: "music/i'M THE TREND.mp3" },
+                { title: "YOASOBI-夜に駆ける", src: "song1.mp3" },
+                { title: "Lady Gaga - Bad Romance", src: "music/Bad Romance.mp3" }
+            ];
+
+            let currentSongIndex = 0;
+            const audioPlayer = document.getElementById("audioPlayer");
+
+            function playRandomSong() {
+                let randomIndex;
+                do {
+                    randomIndex = Math.floor(Math.random() * songs.length);
+                } while (randomIndex === currentSongIndex);
+
+                currentSongIndex = randomIndex;
+                loadSong(currentSongIndex);
+            }
+
+            function loadSong(index) {
+                audioPlayer.src = songs[index].src;
+                audioPlayer.play();
+            }
+
+            function prevSong() {
+                playRandomSong();
+            }
+
+            function nextSong() {
+                playRandomSong();
+            }
+
+            audioPlayer.addEventListener("ended", playRandomSong);
+            playRandomSong();
+        </script>
+    </header>
+
+    <main>
+        <article>
+            <aside class="card">
+                <div class="info">
+                    <h2>
+                        <p>姓名：蔡家宜🌻</br>
+                            生日：93年09月10日</br>
+                            學校：中原大學資訊管理系</br>
+                            星座：處女座♍</br>
+                            生肖：猴🐒</br>
+                        </p>
+                    </h2>
+                </div>
+
+                <div class="divider"></div> <!-- 分隔線 -->
+
+                <nav class="card-nav">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/1e.0910_/">
+                                <img src="image/IG.png" class="social-icon" alt="Instagram">
+                            </a>
+                            Instagram
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100007352317004">
+                                <img src="image/FB.png" class="social-icon" alt="Facebook">
+                            </a>
+                            Facebook
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/@1eeee?si=g8ZD3k1TkkQCng4H">
+                                <img src="image/YT.png" class="social-icon" alt="Youtube">
+                            </a>
+                            Youtube
+                        </li>
+                        <li>
+                            <a href="mailto:shelly45556@gmail.com?subject=Ask&body=Hello,">
+                                <img src="image/Email.png" class="social-icon" alt="Email">
+                            </a>
+                            Send E-mail
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <img src="image/大頭貼.jpg" class="big">
+            <div class="decorated-text">
+                當前方無路時，就是開創新機會的起點
+            </div>
+            <section>
+                <div class="container">
+                    <div class="tab-bar">
+                        <div class="tab active" onclick="showTab(1)">Experience</div>
+                        <div class="tab" onclick="showTab(2)">Favorite</div>
+                        <div class="tab" onclick="showTab(3)">Dream</div>
+                    </div>
+
+                    <div class="content-area">
+                        <div class="tab-content active" id="content1">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                ✨擔任幹部✨
+                                                <li>資管二乙 班代</li>
+                                                <li>資管系學會 執秘</li>
+                                                <li>光舞社 網管</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                ✨取得證照✨
+                                                <li>電腦軟體應用-丙級</li>
+                                                <li>會計事務－資訊-丙級</li>
+                                                <li>AIL人工智慧素養國際認證-專業級</li>
+                                                <li>ITS-Python國際認證</li>
+                                                <li>TQC-Word,PPT,Excel專業級證照</li>
+                                                <li>TQC-中文輸入進階級證照</li>
+                                                <li>TQC-英文輸入實用級證照</li>
+                                                <li>TQC-數字輸入進階級證照</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                ✨活動經歷✨
+                                                <li>四系聯合宿營-美生器組</li>
+                                                <li>校友日-司儀</li>
+                                                <li>四系聯合烤肉-公關組</li>
+                                                <li>三系聯合傳情-活動組</li>
+                                            </ul>
+                                        </td>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-content" id="content2">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                🌞唱歌🌞
+                                                <li>EMO歌曲</li>
+                                                <li>抒情歌曲</li>
+                                                <li>k-pop</li>
+                                                <li>動漫歌曲</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                🌞繪畫🌞
+                                                <li>小插圖</li>
+                                                <li>隨便亂畫</li>
+                                                <li>仿畫</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                🌞美食🌞
+                                                <li>拉麵</li>
+                                                <li>壽司</li>
+                                                <li>鱸魚</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-content" id="content3">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <ul>
+                                                🫧畢業🫧
+                                                <li>考取研究所</li>
+                                                <li>努力高普考</li>
+                                                <li>鑽研日文</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                🫧工作🫧
+                                                <li>人事管理 HR</li>
+                                                <li>執行秘書</li>
+                                                <li>只要坐辦公室都行</li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <ul>
+                                                🫧婚姻🫧
+                                                <li>希望擁有一個家</li>
+                                                <li>有一男一女湊個好</li>
+                                                <li>希望我教小孩教得好</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function showTab(tabNumber) {
+                        const contents = document.querySelectorAll('.tab-content');
+                        const tabs = document.querySelectorAll('.tab');
+
+                        contents.forEach(content => content.classList.remove('active'));
+                        tabs.forEach(tab => tab.classList.remove('active'));
+
+                        document.getElementById(`content${tabNumber}`).classList.add('active');
+                        tabs[tabNumber - 1].classList.add('active');
+                    }
+                </script>
+            </section>
+            <section>
+                <div class="slideshow-container">
+                    <div class="slides fade">
+                        <img src="image/1.jpg" alt="1">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/2.jpg" alt="2">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/3.jpg" alt="3">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/4.jpg" alt="4">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/5.jpg" alt="5">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/6.jpg" alt="6">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/7.jpg" alt="7">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/8.jpg" alt="8">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/9.jpg" alt="9">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/10.jpg" alt="10">
+                    </div>
+
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+
+                <script src="photo.js"></script>
+            </section>
+        </article>
+        <a href="main.html" class="back">Back</a>
+    </main>
+
+    <footer>
+        <h5>--- Jia yi ---</h5>
+    </footer>
+</body>
+
+</html>
