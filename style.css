@@ -3,6 +3,10 @@ body {
     margin: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
     background-color: #cb997e;
     text-align: center;
