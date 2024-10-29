@@ -352,8 +352,12 @@ img {
     }
 
     .card {
-        width: 100%;
+        width: auto;
         margin-bottom: 15px;
+    }
+
+    .content-area {
+        width: auto;
     }
 
     aside {
@@ -374,6 +378,10 @@ img {
         margin: 1%;
     }
 
+    p {
+        font-size: 18px;
+    }
+}
     p {
         font-size: 18px;
     }
