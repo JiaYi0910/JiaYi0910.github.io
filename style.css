@@ -334,3 +334,47 @@ img {
     color: brown;
 }
 
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 10px;
+    }
+
+    header, footer {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .player {
+        width: 100%;
+        position: relative;
+        margin: 10px auto;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    aside {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .card {
+        width: 48%;
+        margin: 1%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
