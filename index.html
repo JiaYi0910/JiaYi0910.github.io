@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<div id="top"></div>
+
+<body>
+    <header>
+        <h1>My Website</h1>
+        <div class="player">
+            <button class="button prev-button" onclick="prevSong()"></button>
+            <audio id="audioPlayer" controls controlslist="nodownload noremoteplayback"></audio>
+            <button class="button next-button" onclick="nextSong()"></button>
+        </div>
+
+        <script src="js/music.js"></script>
+    </header>
+
+    <main>
+        <article>
+            <aside class="card">
+                <div class="info">
+                    <h2>
+                        <p>Name：Jia Yi, Tsai🌻</br>
+                            Birthday：93/09/10</br>
+                            MBTI：INFJ-T</br>
+                            Department：CYCU IM</br>
+                            Zodiac：Virgo♍</br>
+                            Chinese Zodiac：Monkey🐒</br>
+                        </p>
+                    </h2>
+                </div>
+
+                <div class="divider"></div>
+
+                <nav class="card-nav">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/1e.0910_/" target="_blank">
+                                <img src="image/IG.png" class="social-icon" alt="Instagram">
+                            </a>
+                            Instagram
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100007352317004" target="_blank">
+                                <img src="image/FB.png" class="social-icon" alt="Facebook">
+                            </a>
+                            Facebook
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/@1eeee?si=g8ZD3k1TkkQCng4H" target="_blank">
+                                <img src="image/YT.png" class="social-icon" alt="Youtube">
+                            </a>
+                            Youtube
+                        </li>
+                        <li>
+                            <a href="mailto:shelly45556@gmail.com?subject=Ask&body=Hello,">
+                                <img src="image/Email.png" class="social-icon" alt="Email">
+                            </a>
+                            Send E-mail
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <img src="image/大頭貼.jpg" class="big">
+            <div class="decorated-text">
+                When there is no path ahead, it marks the beginning of creating new opportunities.
+            </div>
+            <section>
+                <div class="progress-section">
+                    <h2>Skills Proficiency</h2>
+                    <div class="progress-grid">
+                        <div class="progress-circle">
+                            <div class="circle" data-percentage="90">
+                                <div class="progress-bar" style="--target-percentage: 90" ;></div>
+                                <div class="inner-circle"></div>
+                            </div>
+                            <p>Python</p>
+                        </div>
+                        <div class="progress-circle">
+                            <div class="circle" data-percentage="70">
+                                <div class="progress-bar" style="--target-percentage: 70" ;></div>
+                                <div class="inner-circle"></div>
+                            </div>
+                            <p>Java</p>
+                        </div>
+                        <div class="progress-circle">
+                            <div class="circle" data-percentage="80">
+                                <div class="progress-bar" style="--target-percentage: 80" ;></div>
+                                <div class="inner-circle"></div>
+                            </div>
+                            <p>HTML</p>
+                        </div>
+                        <div class="progress-circle">
+                            <div class="circle" data-percentage="90">
+                                <div class="progress-bar" style="--target-percentage: 90" ;></div>
+                                <div class="inner-circle"></div>
+                            </div>
+                            <p>Visual Basic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="js/circle.js"></script>
+
+                <div class="container">
+                    <div class="tab-bar">
+                        <div class="tab active" onclick="showTab(1)">Experience</div>
+                        <div class="tab" onclick="showTab(2)">Favorite</div>
+                        <div class="tab" onclick="showTab(3)">Dream</div>
+                        <div class="tab" onclick="showTab(4)">Thoughts</div>
+
+                    </div>
+                    <div class="content-area">
+                        <div class="tab-content active" id="content1">
+                            <div class="content-wrapper">
+                                <div class="text_section">
+                                    <ul>
+                                        ✨擔任幹部✨
+                                        <li>高中聖歌團 團長</li>
+                                        <li>資管二乙 班代</li>
+                                        <li>資管系學會 執秘</li>
+                                        <li>光舞社 網管</li>
+                                    </ul>
+                                    <ul>
+                                        ✨取得證照✨
+                                        <li>電腦軟體應用-丙級</li>
+                                        <li>會計事務－資訊-丙級</li>
+                                        <li>AIL人工智慧素養國際認證-專業級</li>
+                                        <li>ITS-Python國際認證</li>
+                                        <li>TQC-Word,PPT,Excel專業級證照</li>
+                                        <li>TQC-中文輸入進階級證照</li>
+                                        <li>TQC-英文輸入實用級證照</li>
+                                        <li>TQC-數字輸入進階級證照</li>
+                                    </ul>
+                                    <ul>
+                                        ✨活動經歷✨
+                                        <li>四系聯合宿營-美生器組</li>
+                                        <li>校友日-司儀</li>
+                                        <li>四系聯合烤肉-公關組</li>
+                                        <li>三系聯合傳情-活動組</li>
+                                    </ul>
+                                </div>
+                                <div class="myimg">
+                                    <div class="mySlides fade">
+                                        <img src="image/109-2AIL基礎級.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/109-2中打.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/109-2英打.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/110-1E化運動會20211106.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <script src="js/img.js"></script>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-content" id="content2">
+                            <div class="content-wrapper">
+                                <div class="text_section">
+                                    <ul>
+                                        🌞唱歌🌞
+                                        <li>EMO-失戀歌單</li>
+                                        <li>淨化心靈-聖歌</li>
+                                        <li>車上嗨爆-k-pop韓團</li>
+                                        <li>讀書愛聽-日文動漫歌曲</li>
+                                    </ul>
+                                    <ul>
+                                        🌞繪畫益智🌞
+                                        <li>平常在課本上會畫小插圖</li>
+                                        <li>在白紙上隨便亂畫</li>
+                                        <li>照著動漫角色仿畫</li>
+                                        <li>樂高跟拼圖家裡超多</li>
+                                    </ul>
+                                    <ul>
+                                        🌞美食美景🌞
+                                        <li>拉麵最推拉麵吧</li>
+                                        <li>藏壽司扭蛋我家超多</li>
+                                        <li>清蒸鱸魚或是烤魚是我的最愛</li>
+                                        <li>喜歡到處拍攝美麗的景色</li>
+                                    </ul>
+                                </div>
+                                <div class="myimg">
+                                    <div class="mySlides fade">
+                                        <img src="image/d1.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/d2.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/d3.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/d4.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/d5.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/d6.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f1.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f2.JPG" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f3.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f4.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f5.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f6.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f7.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f8.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f9.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f10.JPG" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f11.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f12.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f13.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f14.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f15.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f16.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f17.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f18.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/f19.jpg" style="width:100%" class="img1">
+                                    </div>
+                                    <div class="mySlides fade">
+                                        <img src="image/lego.jpg" style="width:100%" class="img1">
+                                    </div>
+
+                                    <script src="js/img.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="content3">
+                            <div class="text_section">
+                                <ul>
+                                    🫧畢業🫧
+                                    <li>想考取人資方面的研究所</li>
+                                    <li>努力高普考-想拿公務員補助</li>
+                                    <li>鑽研日文單純-想學第二外語</li>
+                                </ul>
+                                <ul>
+                                    🫧工作🫧
+                                    <li>大集團的人事行政管理-HR</li>
+                                    <li>偶爾會想去當義工照顧老人或是孤兒院</li>
+                                    <li>要練習酒量以後不知道要不要應酬</li>
+                                </ul>
+                                <ul>
+                                    🫧婚姻🫧
+                                    <li>跟男朋友有一個美好家庭</li>
+                                    <li>小孩有一男一女湊個好</li>
+                                    <li>情緒控制要努力學習!!!</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="content4">
+                            <div class="text_section">
+                                <p class="mood">👀關於我考取超多證照的心得👀</br>
+                                    這些證照都是在我高中的時候考取的，我是高職生所以學校會要求我們提升專業技能
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script src="js/content.js"></script>
+
+            </section>
+            <section>
+                <div class="text_image">Life Story</div>
+                <div class="slideshow-container">
+                    <div class="slides fade">
+                        <img src="image/1.jpg" alt="1">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/2.jpg" alt="2">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/3.jpg" alt="3">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/4.jpg" alt="4">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/5.jpg" alt="5">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/6.jpg" alt="6">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/7.jpg" alt="7">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/8.jpg" alt="8">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/9.jpg" alt="9">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/10.jpg" alt="10">
+                    </div>
+                    <div class="slides fade">
+                        <img src="image/11.jpg" alt="11">
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                </div>
+                <script src="js/photo.js"></script>
+
+            </section>
+        </article>
+
+
+        <a href="#top" class="back">Back</a>
+
+    </main>
+
+    <footer>
+        <h5>--- Jia yi ---</h5>
+    </footer>
+</body>
+
+</html>
